@@ -8,16 +8,24 @@ public class NPC : MonoBehaviour, IInteractable {
     private QuestInteractionUI questUIControls;
     private List<string> currentQuestList;
     private int currentListIndex= 0;
+
+    private void Awake()
+    {
+        
+    }
+
     private void Start()
     {
         //get all of the npc string/quest
         currentQuestList = npcData.getQuestStrings();
         questUIControls = npcTextBubble.GetComponent<QuestInteractionUI>();
+        currentQuestList[currentQuestList.Count -1] = npcData.GetObjective().GetQuest().questDescription;
     }
 
-    public void Interact() {
+    public void Interact() {        
+
         //later check if the list is done first then have the interaction ui to disapear
-        if(currentListIndex >= currentQuestList.Count)
+        if (currentListIndex >=   currentQuestList.Count)
         {
             questUIControls.SetVisibilityFalse();
             currentListIndex = 0;
