@@ -5,12 +5,33 @@ using UnityEngine;
 public class QuestGoal 
 {
     public int requiredAmount;
-    public int amount;
+    public int currentAmount = 0;
     public GoalType goalType;
-    
-    public enum GoalType
+
+
+    public bool GoalIsReached()
     {
-        Kill,
-        Collect
+        return currentAmount >= requiredAmount;
     }
+
+    public void EnemyKilled()
+    {
+        if(goalType == GoalType.Kill)
+        { 
+            currentAmount++;
+        }
+    }
+
+    public void itemCollected()
+    {
+        if(goalType == GoalType.Collect)
+        { 
+            currentAmount++;
+        }
+    }
+}
+public  enum GoalType
+{
+    Kill,
+    Collect
 }

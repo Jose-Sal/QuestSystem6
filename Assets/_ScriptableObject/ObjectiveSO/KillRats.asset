@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: KillRats
   m_EditorClassIdentifier: Assembly-CSharp::ObjectiveScriptableObjectScript
   quest:
-    questName: 
-    questDescription: 
+    questName: Begone Rats!!
+    questDescription: Get rid of at least 3 rats
     isCompleted: 0
+    questGoal:
+      requiredAmount: 3
+      currentAmount: 0
+      goalType: 0

@@ -16,10 +16,10 @@ MonoBehaviour:
   studentEmail: 
   exerciseStateList: []
   objectiveCheckboxState:
-    objective1: 0
+    objective1: 1
     objective2: 0
     objective3: 0
-    bonusObjective1: 0
+    bonusObjective1: 1
     bonusObjective2: 0
     bonusObjective3: 0
     bonusObjective4: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
   defaultScene: {fileID: 102900000, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
   activeExerciseSO: {fileID: 0}
   lastSelectedLectureSO: {fileID: 11400000, guid: 790c70be8e2ecba4ba9dd582fe90022b, type: 2}
-  checkedLastUpdateTimestamp: 1782188201
+  checkedLastUpdateTimestamp: 1782267868
   lastUpdateVersion: 1.00
   lastQOTDResponse:
     questionId: 283
@@ -63,18 +63,18 @@ MonoBehaviour:
   websiteDynamicMessage:
     text: <u>Fresh Assets on Sale!</u>
     url: https://cmonkey.co/unityassetstore
-  websiteDynamicMessageTimestamp: 1782188201
+  websiteDynamicMessageTimestamp: 1782265252
   websiteLatestVideos:
     videos:
+    - youTubeId: -c66MXBKCFk
+      title: How to ESCAPE Tutorial HELL!
     - youTubeId: xDeGnrX1ds4
       title: TOP 10 FREE NEW Assets JUNE 2026!
     - youTubeId: l8haAb6CPCI
       title: AWESOME Bundle 80% OFF for Beginners and Intermediates!
     - youTubeId: tEmH8kAvGgk
       title: Unity 6.5 is OUT!
-    - youTubeId: H36i5K3tTy8
-      title: TOP 10 NEW Games, Made with Unity! (MAY 2026)
-  websiteLatestVideosTimestamp: 1782188201
+  websiteLatestVideosTimestamp: 1782265252
   lastChatAIQuestionAsked: Is Unity good for making 2D games?
   lastChatAIQuestionAnswer: 'Unity is great for making 2D games! It provides a wide
     range of tools and features specifically designed for 2D game development. Unity''s

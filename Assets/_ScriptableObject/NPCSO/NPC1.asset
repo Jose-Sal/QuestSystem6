@@ -14,4 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCScriptableObjectScript
   questStrings:
   - Hello there.
-  - Do this _________
+  - I need you to do something for me...
+  - git rid of at least 3 rats
+  quest:
+    questName: Begone Rats!
+    questDescription: git rid of at least 3 rats
+    isCompleted: 0
+    questGoal:
+      requiredAmount: 3
+      currentAmount: 6
+      goalType: 0

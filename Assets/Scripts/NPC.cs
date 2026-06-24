@@ -19,7 +19,7 @@ public class NPC : MonoBehaviour, IInteractable {
         //get all of the npc string/quest
         currentQuestList = npcData.getQuestStrings();
         questUIControls = npcTextBubble.GetComponent<QuestInteractionUI>();
-        currentQuestList[currentQuestList.Count -1] = npcData.GetObjective().GetQuest().questDescription;
+        currentQuestList[currentQuestList.Count -1] = npcData.GetQuest().questDescription;
     }
 
     public void Interact() {        
@@ -28,7 +28,7 @@ public class NPC : MonoBehaviour, IInteractable {
         if (currentListIndex >=   currentQuestList.Count)
         {
             questUIControls.SetVisibilityFalse();
-            currentListIndex = 0;
+            PlayersQuestManagement.Instance.setQuest(npcData.GetQuest());
             return;
         }
 

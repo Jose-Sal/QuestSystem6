@@ -10,4 +10,8 @@ public class Quest
 
     [SerializeField] private QuestGoal questGoal;
 
+    public QuestGoal GetQuestGoal()
+    {
+        return questGoal;
+    }
 }

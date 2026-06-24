@@ -10912,6 +10912,7 @@ GameObject:
   - component: {fileID: 1914889273}
   - component: {fileID: 1914889277}
   - component: {fileID: 1914889276}
+  - component: {fileID: 1914889278}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -11003,6 +11004,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPickup
   carryingObjectHoldPoint: {fileID: 1474721459}
+--- !u!114 &1914889278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914889272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c742ca461695624a8ed5f4dbb2883ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  currentQuest:
+    questName: 
+    questDescription: 
+    isCompleted: 0
+    questGoal:
+      requiredAmount: 0
+      currentAmount: 0
+      goalType: 0
 --- !u!1001 &1915425547
 PrefabInstance:
   m_ObjectHideFlags: 0

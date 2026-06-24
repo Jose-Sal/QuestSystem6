@@ -6,15 +6,16 @@ using UnityEngine;
 public class NPCScriptableObjectScript : ScriptableObject
 {
     [SerializeField]private List<string> questStrings;
-    [SerializeField] private ObjectiveScriptableObjectScript Objective;
+    [SerializeField] private Quest quest;
 
     public List<string> getQuestStrings()
     {
         return questStrings;
     }
 
-    public ObjectiveScriptableObjectScript GetObjective()
+    public Quest GetQuest()
     {
-        return Objective;
+        return quest;
     }
+    
 }
